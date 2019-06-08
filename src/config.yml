@@ -1,0 +1,10 @@
+no-required: "&cYour attachment doesn't contain <attachment>, so you can't add this attachment!"
+Required-Attachments:
+  AK-47:
+    attachment-3:
+      required:
+        - attachment-1
+        - attachment-2
+    attachment-2:
+      required:
+        - attachment-1

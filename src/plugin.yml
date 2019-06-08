@@ -1,0 +1,12 @@
+name: AttachmentRestrict
+version: 0.0.1-SNAPSHOT
+main: com.ericlam.mc.attachment.restrict.main.AttachmentRestrict
+author: Hydranapse_
+depend: [CrackShotPlus]
+commands:
+  ar-reload:
+    description: reload command
+permissions:
+  ar.reload:
+    description: reload permission
+    default: op
