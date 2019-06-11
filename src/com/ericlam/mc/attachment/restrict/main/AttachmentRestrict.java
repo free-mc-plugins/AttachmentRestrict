@@ -58,6 +58,7 @@ public class AttachmentRestrict extends JavaPlugin implements Listener {
 
     @Override
     public void reloadConfig() {
+        super.reloadConfig();
         this.noRequiredMsg = ChatColor.translateAlternateColorCodes('&', this.getConfig().getString("no-required"));
         ConfigurationSection attachments = this.getConfig().getConfigurationSection("Required-Attachments");
         attachmentRequired.clear();
