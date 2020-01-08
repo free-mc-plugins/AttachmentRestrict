@@ -46,7 +46,7 @@ public class AttachmentRestrict extends JavaPlugin implements Listener {
         Optional<RequireAttachment> required = attachmentRequired.get(weapon).stream().filter(ra -> ra.getAttachment().equals(attachment)).distinct().findAny();
         if (!required.isPresent()) return;
         RequireAttachment requireAttachment = required.get();
-        List<String> attachments = Arrays.asList(CSPapi.getAttachmentsForWeapon(weapon));
+        List<String> attachments = Arrays.asList(CSPapi.getAttachments(e.getItemStack()).split(","));
         boolean pass = true;
         for (String node : requireAttachment.getRequired()) {
             pass = pass && attachments.contains(node);
