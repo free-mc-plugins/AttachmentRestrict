@@ -1,5 +1,5 @@
 name: AttachmentRestrict
-version: 1.0.0
+version: 1.0.1
 main: com.ericlam.mc.attachment.restrict.main.AttachmentRestrict
 author: Hydranapse_
 depend: [CrackShotPlus]
